@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(
       MaterialApp(
-        home: null,
+        debugShowCheckedModeBanner: false,
+        home: SafeArea(
+          child: Scaffold(
+            appBar: AppBar(
+              title: Text('Demo'),
+            ),
+          ),
+        ),
       ),
     );
